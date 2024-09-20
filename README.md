@@ -2,7 +2,7 @@
 Responsive PowerISO Website Remake Using HTML, CSS &amp; JavaScript
 
 ---
-> HOW TO DEPLOY ON VSCODE : </br>
+# HOW TO DEPLOY ON VSCODE : </br>
 ```
 1. Install Liveserver extention
 2. Right click on index.html and run live server
