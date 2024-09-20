@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerISO - All in One Solution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav {
+            display: flex; 
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            margin-left: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .nav a:hover {
+            transform: scale(1.1);
+            color: #007bff;
+        }
+
+        .content {
+            padding: 20px 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .download-button:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f0f0f0;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+            }
+
+            .logo {
+                text-align: center;
+            }
+
+            .nav {
+                display: flex; 
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav li {
+                margin-left: 0; 
+                margin-bottom: 10px;
+            }
+
+            table {
+                overflow-x: auto;
+            }
+        }
+
+        .nav-button {
+            display: none; 
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-button i {
+            font-size: 20px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .nav-button {
+                display: block; 
+            }
+        }
+
+        .nav-button i {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .nav-button.active i {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                Power ISO
+            </div>
+            <button class="nav-button" onclick="toggleNav()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Buy Now</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Contact US</a></li>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h2>Download PowerISO</h2>
+            <p>Click the following link to download a free copy of PowerISO and try it before you purchase.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Released Date</th>
+                        <th>File Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PowerISO v8.9 (32-bit)</td>
+                        <td>August 26, 2024</td>
+                        <td>4979 KB</td>
+                    </tr>
+                    <tr>
+                        <td>PowerISO v8.9 (64-bit)</td>
+                        <td>August 26, 2024</td>
+                        <td>5072 KB</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a href="#" class="download-button">Download PowerISO v8.9 (32-bit)</a>
+            <a href="#" class="download-button">Download PowerISO v8.9 (64-bit)</a>
+
+            <h3>New Features in v8.9:</h3>
+            <ul>
+                <li>Supports parallels, qcow and qcow2 virtual disk image files.</li>
+                <li>Supports jfs and f2fs file systems.</li>
+                <li>Some minor bug fixes and enhancements.</li>
+            </ul>
+            <p><a href="#">Click here to view the whole revision history...</a></p>
+
+            <p>Free unregistered versions will allow you to evaluate the software for free to determine if it suits your needs. Click "Download" to download and install the software.</p>
+            <p>The unregistered version will display a dialog prompts you to register, and you can not create or edit image files greater than 300MB with the unregistered version. To remove these limitations, please <a href="#">register</a></p>
+
+            <h3>Other downloads:</h3>
+            <p>Click the below links to download PowerISO for other operating systems:</p>
+            <ul>
+                <li>PowerISO for Linux</li>
+                <li>PowerISO Command Line Utility for Linux</li>
+                <li>PowerISO Command Line Utility for OSX</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Copyright 2004-2024 Power Software Ltd. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.querySelector('.container').style.opacity = 1;
+                document.querySelector('.container').style.transform = "translateY(0)";
+            }, 500);
+        };
+
+        function toggleNav() {
+            var nav = document.querySelector('.nav');
+            var navButton = document.querySelector('.nav-button');
+
+            nav.classList.toggle('active');
+            navButton.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
